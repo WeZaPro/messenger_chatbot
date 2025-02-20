@@ -13,6 +13,9 @@ const PAGE_ACCESS_TOKEN =
 
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => {
+  res.status(200).send("Start Server chatbot");
+});
 // ✅ Webhook สำหรับ Verify Token
 app.get("/webhook", (req, res) => {
   let mode = req.query["hub.mode"];
