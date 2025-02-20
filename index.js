@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const request = require("request");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3005;
 
 // ตั้งค่า Verify Token
 const VERIFY_TOKEN = process.env.VERIFY_TOKEN || "your_verify_token";
@@ -93,5 +93,5 @@ const sendMessage = (senderId, text) => {
 };
 
 app.listen(3005, () => {
-  console.log(`🚀 Server is running on port ${PORT}`);
+  console.log(`🚀 Server is running on port 3005`);
 });
