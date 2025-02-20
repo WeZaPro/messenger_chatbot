@@ -92,6 +92,6 @@ const sendMessage = (senderId, text) => {
   );
 };
 
-app.listen(PORT, () => {
+app.listen(3005, () => {
   console.log(`🚀 Server is running on port ${PORT}`);
 });
